@@ -11,7 +11,7 @@ public class Detalhes {
 	private String arp;
 	private String lr;
 
-	//redecard_ws
+	//redecard
 	@SerializedName("numero_sequencial")
 	private String numeroSequencial;
 	@SerializedName("numero_comprovante_venda")
@@ -22,7 +22,6 @@ public class Detalhes {
 	private String numeroAutorizacao;
 	@SerializedName("url_comprovante")
 	private String urlComprovante;
-
 
 
 	//getters

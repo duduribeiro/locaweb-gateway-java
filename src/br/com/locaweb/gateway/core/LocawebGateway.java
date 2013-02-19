@@ -63,4 +63,10 @@ public class LocawebGateway {
 		return json.fromJSONToTransacao(transacaoJson);
 	}
 
+	public Transacao estornar(Integer id) {
+		String jsonPost = json.buildJSONTokenPost();
+		String transacaoJson = http.post(id.toString().concat("/estornar"), jsonPost);
+		return json.fromJSONToTransacao(transacaoJson);
+	}
+
 }
